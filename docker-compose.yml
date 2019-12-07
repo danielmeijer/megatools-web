@@ -1,0 +1,7 @@
+version: '3'
+
+services: 
+  megatools:
+    build: .
+    ports: 
+      - "80:80"
