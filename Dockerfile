@@ -15,5 +15,5 @@ RUN sed -i "/user  nginx;/c\user  www-data;" /etc/nginx/nginx.conf
 RUN mkdir /run/php
 
 
-CMD [ "./entrypoint.sh" ]
+CMD bash /entrypoint.sh
 EXPOSE 80 443
